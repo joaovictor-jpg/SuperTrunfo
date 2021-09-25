@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Trunfo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabeca">
+        <h1 class="title">Super <strong>Trunfo</strong></h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo" alt="logo">
+    </header>
+    <main class="container">
+        <div class="jogador-jogo">
+            <div class="caixa">
+                <p>Nome do jogador</p>
+                <input type="text" class="nomedojogador" id="nomeDojogador" placeholder="Digite aqui:">
+                <button class="btnenviar" type="submit" id="enviar()" onclick="enviar()">Enviar</button>
+            </div>
+            <div class="caixa-jogo">
+                <h2 class="subtitle">Cartas na Mesa</h2>
+                <button type="button" onclick="sortearCarta()" id="btnSortear">Sortear Cartas</button>
+                <div class="jogo">
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+                    </div>
+                    <div id="carta-maquina">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+                    </div>
+                </div>
+                <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            </div>
+        </div>
+        <div class="placar">
+            <table class="placar">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Vitoria</th>
+                        <th>Derrotas</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

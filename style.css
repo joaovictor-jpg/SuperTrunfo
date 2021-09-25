@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("https://images.alphacoders.com/625/625058.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+.cabeca {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 128, 0, 0.199);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.cabeca h1 {
+    font-size: 3em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.cabeca img.page-logo {
+    width: 250px;
+}
+
+.container {
+    color: white;
+}
+
+.jogador-jogo {
+    display: flex;
+    align-items: center;
+}
+
+.caixa {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.caixa p {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.caixa .nomedojogador {
+    padding: 8px;
+    width: 250px;
+    border-radius: 25px;
+    outline: none;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.caixa .btnenviar {
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 0px rgba(245, 222, 179, 0.137);
+}
+
+.btnenviar:hover {
+    background-color: black;
+    font-weight: 700;
+    color: honeydew;
+}
+
+.caixa-jogo {
+    text-align: center;
+}
+
+.caixa-jogo .subtitle {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.caixa-jogo #btnSortear {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px 0px rgba(245, 222, 179, 0.137);
+}
+
+.caixa-jogo #btnSortear:hover {
+    background-color: black;
+    color: #F7F7F7;
+    border: 1px solid white;
+}
+
+.jogo {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.jogo #carta-jogador img{
+    height: 280px;
+}
+
+.jogo #carta-maquina {
+    padding-left: 15px;
+}
+
+.jogo #carta-maquina img{
+    height: 280px;
+}
+
+.caixa-jogo .button-jogar {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px 0px rgba(245, 222, 179, 0.137);
+}
+
+.caixa-jogo .button-jogar:hover {
+    background-color: black;
+    color: #F7F7F7;
+    border: 1px solid white;
+}
+
+.placar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 7px;
+}
+
+.placar thead th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
