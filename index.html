@@ -17,18 +17,18 @@
         <div class="jogador-jogo">
             <div class="caixa">
                 <p>Nome do jogador</p>
-                <input type="text" class="nomedojogador" id="nomeDojogador" placeholder="Digite aqui:">
-                <button class="btnenviar" type="submit" id="enviar()" onclick="enviar()">Enviar</button>
+                <input type="text" class="nomedojogador" id="nomeDojogador" placeholder="Digite aqui:"><br>
+                <button class="btnenviar" type="submit" id="enviar" onclick="enviar()">Enviar</button>
             </div>
             <div class="caixa-jogo">
                 <h2 class="subtitle">Cartas na Mesa</h2>
-                <button type="button" onclick="sortearCarta()" id="btnSortear">Sortear Cartas</button>
+                <button type="button" onclick="sortearCarta()" id="btnSortear" disabled="false">Sortear Cartas</button>
                 <div class="jogo">
-                    <div id="carta-jogador">
-                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+                    <div class="carta-jogador" id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">
                     </div>
-                    <div id="carta-maquina">
-                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">
+                    <div class="carta-maquina">
+                        <!--<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png">-->
                     </div>
                 </div>
                 <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>

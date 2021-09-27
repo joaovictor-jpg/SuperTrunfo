@@ -11,7 +11,7 @@ body {
     background-image: url("https://images.alphacoders.com/625/625058.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgb(0, 0, 0);
 }
 
 .cabeca {
@@ -36,28 +36,32 @@ body {
 
 .container {
     color: white;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .jogador-jogo {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.caixa {
-    width: 600px;
+.jogador-jogo .caixa {
+    height: auto;
     text-align: center;
-    margin-bottom: 25px;
 }
 
-.caixa p {
+.jogador-jogo .caixa p {
     font-weight: 100;
     font-style: italic;
     font-size: 23px;
     margin-bottom: 8px;
 }
 
-.caixa .nomedojogador {
+.jogador-jogo .caixa .nomedojogador {
     padding: 8px;
+    margin: 2px;
     width: 250px;
     border-radius: 25px;
     outline: none;
@@ -66,7 +70,7 @@ body {
     text-align: center;
 }
 
-.caixa .btnenviar {
+.jogador-jogo .caixa .btnenviar {
     padding: 8px;
     border-radius: 15px;
     box-shadow: 2px 2px 4px 0px rgba(245, 222, 179, 0.137);
@@ -78,17 +82,20 @@ body {
     color: honeydew;
 }
 
-.caixa-jogo {
-    text-align: center;
+.jogador-jogo .caixa-jogo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.caixa-jogo .subtitle {
+.jogador-jogo .caixa-jogo .subtitle {
     font-weight: 400;
     font-style: normal;
     font-size: 2em;
 }
 
-.caixa-jogo #btnSortear {
+.jogador-jogo .caixa-jogo #btnSortear {
     padding: 8px;
     font-size: 15px;
     border: 1px solid black;
@@ -96,28 +103,46 @@ body {
     box-shadow: 2px 2px 4px 0px rgba(245, 222, 179, 0.137);
 }
 
-.caixa-jogo #btnSortear:hover {
+.jogador-jogo .caixa-jogo #btnSortear:hover {
     background-color: black;
     color: #F7F7F7;
     border: 1px solid white;
 }
 
-.jogo {
+.jogador-jogo .caixa-jogo .jogo {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    margin: 15px;
+    align-items: center;
+    text-align: center;
+    /*background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png");
+    background-repeat: no-repeat;
+    background-size: 97px;*/
+
 }
 
-.jogo #carta-jogador img{
-    height: 280px;
+.carta-subtitle {
+    position: relative;
+    font-size: 14px;
+    top: 28px;
+    left: 2px;
 }
 
-.jogo #carta-maquina {
-    padding-left: 15px;
+.jogo .carta-jogador {
+    background-size: 97px;
+    background-repeat: no-repeat;
+    background-position-x: 131px;
+    background-position-y: 49px;
 }
 
-.jogo #carta-maquina img{
-    height: 280px;
+.jogo .carta-jogador img {
+    height: auto;
+    width: 45%;
+}
+
+.jogo .carta-maquina img{
+    height: auto;
+    width: 45%;
 }
 
 .caixa-jogo .button-jogar {
@@ -133,6 +158,17 @@ body {
     color: #F7F7F7;
     border: 1px solid white;
 }
+/*.jogo #carta-jogador .moldura {
+    height: auto;
+}
+
+.jogo #carta-maquina {
+    padding-left: 15px;
+}
+
+.jogo #carta-maquina .maquina{
+    height: 280px;
+}*/
 
 .placar {
     width: 100%;
